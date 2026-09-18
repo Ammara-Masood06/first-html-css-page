@@ -1,0 +1,166 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: darkred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card-container {
+    background-color: black;
+    width: 80%;
+    height: 500px;
+    display: flex;
+}
+
+.left-sidebar {
+    width: 20%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    border-right: 1px solid gray;
+}
+
+.logo {
+    font-size: 20px;
+    color: crimson;
+    margin-bottom: 40px;
+}
+
+.vertical-text{
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-family: Garamond;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: white;
+    opacity: 0.9;
+    border-left: 2px solid crimson;
+    padding-left: 8px;
+}
+
+.middle-image {
+    width: 35%;
+    height: 100%;
+    background-color: white;
+    overflow: hidden;
+}
+
+    .middle-image img {
+    
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+.right-cntent{
+    width: 45%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+    .navbar a {
+        color: gray;
+        text-decoration: none;
+        font-family: Georgia;
+        font-size: 16px;
+    }
+
+        .navbar a:hover {
+        color:white;
+        }
+
+.hero-text{
+    margin-top: 40px;
+}
+
+.hero-text h1 {
+    color:white;
+    font-family: Georgia;
+    font-size: 36px;
+    letter-spacing: 2px;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.bio{
+    color: gray;
+    font-family: Georgia;
+    font-size:14px;
+    line-height: 1.6;
+    margin-top: 15px;
+    max-width: 280px;
+    letter-spacing: 0.5px;
+
+}
+
+.certifications {
+    margin-top: 25px;
+    max-width: 320px;
+}
+.cert-title{
+    color: crimson;
+    font-family: Georgia;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.cert-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 140px;
+    overflow-y: auto;
+}
+
+.cert-list::-webkit-scrollbar{
+    width: 3px;
+}
+
+.cert-list::-webkit-scrollbar-thumb{
+    background-color: crimson;
+}
+
+.cert-list li{
+    display:flex;
+    flex-direction: column;
+    padding: 60px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.cert-name{
+    color: white;
+    font-family: Georgia;
+    font-size: 13px;
+    font-weight: bold
+}
+
+.cert-meta{
+    color: gray;
+    font-family: Georgia;
+    font-size: 11px;
+    margin-top: 2px;
+}
+
+.star{
+    color: crimson;
+    margin-left: 5px;
+}
